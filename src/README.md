@@ -1,4 +1,4 @@
-![Java](https://img.shields.io/badge/Java-17-orange?style=flat&logo=java)
+![Java](https://img.shields.io/badge/Java-21-orange?style=flat&logo=java)
 ![Status](https://img.shields.io/badge/Status-Concluído-success)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
@@ -27,7 +27,7 @@ Projeto desenvolvido como parte dos meus estudos em **Java** e **Estruturas de D
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Java 17** 
+- **Java 21** 
 - **Collections Framework**
   - `ArrayList` - Armazenamento de livros e empréstimos
   - `HashMap` - Busca rápida de usuários por CPF
@@ -120,7 +120,7 @@ src/
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/SEU-USUARIO/sistema-biblioteca-java.git
+git clone https://github.com/JevScript/Sistema-biblioteca-java.git →
 cd sistema-biblioteca-java
 ```
 
@@ -209,7 +209,7 @@ Este projeto me ensinou:
 
 **[Jean Vicente Lima da Silva]**
 
-- 💼 LinkedIn: [Jean Vicente](https://www.linkedin.com/in/jean-silva-vicente)
+- 💼 LinkedIn: [Jean Vicente](https://www.linkedin.com/in/jean-silva-vicente/)
 - 🐙 GitHub: [@JevScript](https://github.com/JevScript)
 - 📧 Email: jeanvicente2002@gmail.com
 
