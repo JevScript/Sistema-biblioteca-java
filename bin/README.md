@@ -209,7 +209,7 @@ Este projeto me ensinou:
 
 **[Jean Vicente Lima da Silva]**
 
-- 💼 LinkedIn: [Jean Vicente](www.linkedin.com/in/jean-silva-vicente)
+- 💼 LinkedIn: [Jean Vicente](https://www.linkedin.com/in/jean-silva-vicente)
 - 🐙 GitHub: [@JevScript](https://github.com/JevScript)
 - 📧 Email: jeanvicente2002@gmail.com
 
