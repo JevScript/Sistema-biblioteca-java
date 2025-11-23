@@ -48,8 +48,10 @@ public class Biblioteca {
 			if(usuarios.containsKey(cpf)) {
 				Emprestimo emprestimo = new Emprestimo(obra, usuarios.get(cpf));
 				emprestimos.add(emprestimo);
-				System.out.println("Empréstimo criado com sucesso!");
 				obra.setDisponivel(false);
+				emprestimo.setDataEmprestimo(LocalDate.now());
+				System.out.println("Empréstimo criado com sucesso!");
+				System.out.println("Detalhes do Empréstimo: \n" + "Obra = " + emprestimo.getLivro().getTitulo() + ", Data de retirada do emprestimo = " + emprestimo.getDataEmprestimo());
 			}else {
 				System.out.println("Usuario não encontrado!");
 			}
@@ -65,15 +67,15 @@ public class Biblioteca {
 			return;
 		}
 		
-		if(Livro.isDisponivel()) {
+		if(!Livro.isDisponivel()) {
 			for(Emprestimo emp : emprestimos) {
 				if(emp.getLivro().equals(Livro)) {
 					emp.getLivro().setDisponivel(true);
 					emp.setDataDevolucao(LocalDate.now());
-					System.out.println("Devolução foi realizada com sucesso!");
+					System.out.println("Detalhes da Devolução:\n" + "[ Usuario = " + emp.getUsuario().getNome() + ", Obra = " + emp.getLivro().getTitulo()
+							+ ", data de devolução = " + emp.getDataDevolucao());				
 				}
 			}
-			listarLivrosDisponiveis();
 		}else {
 			System.out.println("Não há livros para devolução!");
 		}
@@ -88,8 +90,6 @@ public class Biblioteca {
 			for(Livro liv : livros) {
 				if(liv.isDisponivel()) {
 					System.out.println(liv.toString());
-				}else {	
-				System.out.println("\nLivro: " + liv.getTitulo());
 				}
 		}
 	}
@@ -128,8 +128,6 @@ public class Biblioteca {
 			if(emp.getUsuario().getCpf().equals(cpf)) {
 				System.out.println("O Livro foi: " + emp.getLivro().getTitulo());
 				System.out.println("O Usuario foi: " + emp.getUsuario().getNome());
-				System.out.println("O Prazo de devolução é: " + emp.getDataDevolucao());
-				System.out.println("-----------");
 				encontrou =true;
 			}
 		}

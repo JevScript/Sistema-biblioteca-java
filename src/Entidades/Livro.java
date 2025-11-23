@@ -51,7 +51,7 @@ public class Livro {
 	}
 
 	public boolean isDisponivel() {
-		return true;
+		return this.disponivel;
 	}
 
 	public void setDisponivel(boolean disponivel) {
